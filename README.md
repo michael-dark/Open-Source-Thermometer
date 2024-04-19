@@ -27,7 +27,7 @@ The device can be powered from the USB C power or via 6-12V power supply to the 
 Any K-type thermocouple can be used as is. If other thermocouples are used, the thermocouple type in the code must be changed to reflect the thermocouple installed.
 
 ## Config file
-The configuration file must be named thermo.cfg and be on the SD card. It is a plain text file. All lines start with the parameter, followed by an equal sign, then the parameter.
+The configuration file must be named thermo.cfg and be on the SD card. It is a plain text file. All lines start with the parameter, followed by an equal sign, then the parameter. In the included sample thermo.cfg, delete everything to the right of the = on each line. 
 
 |Parameter|Legal Values|Explanation|
 |---------|------------|-----------|
@@ -64,3 +64,6 @@ The configuration file must be named thermo.cfg and be on the SD card. It is a p
 |RH_OFFSET||Humidity offset (in degrees C)|
 |FREQUENCY|<Integer>|Logging frequency (in minutes)|
 |LOG_TO_SD|0 or 1|Save temps to SD card? (1 - yes, 0 - no)|
+
+## InfluxDB Setup
+I created a free account on [InfluxDB](https://www.influxdata.com) - however, you could run a local instance as well. See the InfluxDB documentation for setup. I then used [Grafana](https://grafana.com) for visualization.
