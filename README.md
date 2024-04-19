@@ -16,7 +16,7 @@ This project is to develop an open-source hardware and software solution for an 
 
 The code sets the thermocouple numbers based on the address:
 |Address|Thermocouple number|
-|+-------+|+------------------+|
+|:-------:|:------------------:|
 |0x67|1|
 |0x66|2|
 |0x65|3|
