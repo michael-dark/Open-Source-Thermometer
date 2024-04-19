@@ -12,6 +12,18 @@ This project is to develop an open-source hardware and software solution for an 
 * M3 50mm socket-head screws and M3 nuts (4 each)
 * M3 socket-head screws and nuts (variable depending on sensors installed)
 
+**NOTE:** The only soldering potentially needed for this project is to set the address if more than one thermocouple per thermometer is desired. (See [this page](https://learn.adafruit.com/adafruit-mcp9600-i2c-thermocouple-amplifier/pinouts) for more information on setting addresses.) By default, the thermocouple sensor is set to the address 0x67, which is coded as thermocouple 1. 
+
+The code sets the thermocouple numbers based on the address:
+|Address|Thermocouple number|
+|+-------+|+------------------+|
+|0x67|1|
+|0x66|2|
+|0x65|3|
+|0x64|4|
+
+However, this can be changed in the source code. 
+
 ## Case
 STEP and STL files for the components of the case are included. **NOTE:** STLs may need to be rotated to print correctly. I did not need supports to print these, but that may vary depending on the 3D printer and plastic used.
 
